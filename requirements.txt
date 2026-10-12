@@ -1,0 +1,5 @@
+-r Lab5/requirements.txt
+pandas
+scikit-learn
+seaborn
+pyarrow
