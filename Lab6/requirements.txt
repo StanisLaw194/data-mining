@@ -1,0 +1,10 @@
+# TensorFlow 2.16.2 is the last release supporting Intel macOS.
+# Use Python 3.12 on Intel macOS; newer supported TensorFlow versions may be
+# used on Linux, Windows, and Apple Silicon.
+tensorflow==2.16.2
+numpy<2
+pandas
+scikit-learn
+matplotlib
+joblib
+ipykernel
