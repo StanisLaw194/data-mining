@@ -1,0 +1,12 @@
+{
+  "source": "https://commons.wikimedia.org/wiki/File:PizzaMargherita.jpg",
+  "author": "SIG SG 510",
+  "license": "CC0 1.0",
+  "expected_class": "pizza",
+  "predicted_class": "pizza",
+  "probabilities": {
+    "cheese_plate": 0.014710451476275921,
+    "garlic_bread": 0.3026973307132721,
+    "pizza": 0.6825922131538391
+  }
+}

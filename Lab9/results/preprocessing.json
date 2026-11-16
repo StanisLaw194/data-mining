@@ -1,0 +1,16 @@
+{
+  "image_size": [
+    128,
+    128
+  ],
+  "color_mode": "rgb",
+  "interpolation": "bilinear",
+  "pixel_range": "0..255",
+  "rescaling_in_model": "1/255",
+  "class_names": [
+    "cheese_plate",
+    "garlic_bread",
+    "pizza"
+  ],
+  "seed": 42
+}

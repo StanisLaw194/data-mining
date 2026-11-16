@@ -1,0 +1,7 @@
+{
+  "selected_model": "dropout_03",
+  "test_loss": 0.6170101165771484,
+  "test_accuracy": 0.7506666779518127,
+  "macro_f1": 0.7492829383946459,
+  "majority_accuracy": 0.3333333333333333
+}
