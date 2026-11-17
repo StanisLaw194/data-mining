@@ -1,0 +1,72 @@
+{
+  "python": "3.9.6",
+  "tensorflow": "2.16.2",
+  "keras": "3.10.0",
+  "seed": 42,
+  "variant": 17,
+  "source": "Food-101 / Lab9 manifest.json",
+  "class_indices": [
+    16,
+    46,
+    76
+  ],
+  "class_names": [
+    "cheese_plate",
+    "garlic_bread",
+    "pizza"
+  ],
+  "split_counts_per_class": {
+    "train": 600,
+    "val": 150,
+    "test": 250
+  },
+  "image_size": [
+    224,
+    224
+  ],
+  "pixel_range": [
+    0,
+    255
+  ],
+  "backbone": "EfficientNetB0",
+  "weights": "imagenet",
+  "unfrozen_layers": [
+    "block7a_expand_conv",
+    "block7a_dwconv",
+    "block7a_se_reduce",
+    "block7a_se_expand",
+    "block7a_project_conv",
+    "top_conv"
+  ],
+  "selected_stage": "fine_tuning",
+  "comparison": [
+    {
+      "stage": "feature_extraction",
+      "unfrozen": "лише голова",
+      "lr": 0.001,
+      "params": 3843,
+      "epochs": 10,
+      "accuracy": 0.9333333373069763,
+      "loss": 0.17443692684173584
+    },
+    {
+      "stage": "fine_tuning",
+      "unfrozen": "block7*, top_* (без BatchNorm)",
+      "lr": 1e-05,
+      "params": 1125427,
+      "epochs": 10,
+      "accuracy": 0.9333333373069763,
+      "loss": 0.16287507116794586
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.9626666903495789,
+    "loss": 0.10736453533172607
+  },
+  "macro_f1": 0.9626321830853367,
+  "most_confused": {
+    "count": 9,
+    "true": "garlic_bread",
+    "predicted": "pizza"
+  }
+}

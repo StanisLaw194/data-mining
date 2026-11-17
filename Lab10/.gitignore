@@ -1,0 +1,8 @@
+results/*.keras
+results/*.h5
+.keras/
+.mplcache/
+.jupyter/
+.ipython/
+__pycache__/
+.ipynb_checkpoints/
